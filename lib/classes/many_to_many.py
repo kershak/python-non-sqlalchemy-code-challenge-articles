@@ -121,7 +121,7 @@ class Magazine:
         best_mag = None
         best_mag_article_count = 0
         for mag in Magazine.all:
-            if(len(mag.aarticles()) > best_mag_article_count):
+            if(len(mag.articles()) > best_mag_article_count):
                 best_mag_article_count = len(mag.articles())
                 best_mag = mag
         return best_mag
